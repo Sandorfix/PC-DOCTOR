@@ -1,0 +1,140 @@
+/* Ectra Features Custom CSS */
+body {
+    font-family: 'Play', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #073D7C;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#logo {
+    transition: all 1s ease;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+.my-btn-whatsapp:hover {
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+.my-btn-tel:hover {
+    transform: scale(0.9);
+    transition: all 0.5s;
+
+}
+
+.container {
+    position: relative;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20rem;
+    bottom: 3rem;
+    border-radius: 100%;
+    background: lightgray;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 50%;
+    transition: opacity 0.5s;
+    z-index: 5;
+}
+
+.back-to-top-icon {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+/* ticker */
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color: transparent;
+    padding-left: 100%;
+}
+
+.ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+
+.ticker_item {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+
+@media (max-width: 1200px) {
+    .back-to-top {
+        position: fixed;
+        right: 0.5rem;
+        bottom: 3.2rem;
+        border-radius: 100%;
+        background: lightgray;
+        padding: 0.2rem;
+        border: none;
+        cursor: pointer;
+        opacity: 50%;
+        transition: opacity 0.5s;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 280px) {
+    .back-to-top {
+        display: none;
+    }
+}
+

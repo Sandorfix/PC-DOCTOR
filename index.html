@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC_Doctor_Informatica</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+    <!-- Audio onclick  -->
+    <audio id="audio" src="/audioMp3/mixkit-bless-choir-655.mp3"></audio>
+
+    <!-- Navbar -->
+    <div class="container border border-secondary p-3" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light fw-bold m-0 p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="/logos/logo-xm.png" id="logo" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="collapse navbar-collapse fs-5" id="navbarText">
+                        <ul class="container d-flex justify-content-end navbar-nav me-auto mb-2 mb-lg-0 pe-0">
+                            <li class="nav-item  my-1 px-sm-5">
+                                <a onclick="playAudio()" class="nav-link px-3 active" aria-current="page"
+                                    href="#donde-estamos">Dónde estamos</a>
+                            </li>
+                            <li class="nav-item my-1 px-sm-5">
+                                <a onclick="playAudio()" class="nav-link px-3" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item my-1 px-sm-5">
+                                <a onclick="playAudio()" class="nav-link px-3" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </div>
+
+    <!-- Carousel -->
+    <section class="container">
+        <div class="row">
+            <div class="col bg-dark">
+                <div id="carouselExampleControls" class="carousel slide m-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images-carousel/img-1.png" class="img-fluid mx-auto rounded d-block w-md-100"
+                                alt="foto pc hardware">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images-carousel/img-2.png" class="img-fluid mx-auto rounded d-block w-md-50"
+                                alt="foto pc hardware">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images-carousel/img-3.png" class="img-fluid mx-auto rounded d-block w-md-50"
+                                alt="foto pc hardware">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="container px-0 py-4 d-flex flex-column border border-secondary" id="servicios">
+        <div class="row gx-0">
+            <div class="column d-flex justify-content-center flex-wrap">
+                <img src="/images-tienda/talleryventa.jpg" class="img-fluid py-4" alt="tienda">
+                <img src="/images-tienda/financiacion-sin-intereses.jpg" class="img-fluid py-4" alt="tienda">
+                <div class="container d-flex justify-content-center p-2">
+                    <img src="/images-tienda/info.jpg" class="img-fluid py-4 border border-dark rounded-3" alt="tienda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direccion Google Maps -->
+    <section class="container px-0 pt-4" id="donde-estamos">
+        <div class="row gx-0">
+            <div class="col">
+                <iframe class="rounded" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=C.%20Agust%C3%ADn%20de%20Betancourt,%2024,%2038400%20Puerto%20de%20la%20Cruz,%20Santa%20Cruz%20de%20Tenerife+(Doctor%20PC%20Informatica)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/wearable-gps/">PC_Doctor_Informatica</a>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="container ctn-back-to-top">
+        <button class="back-to-top hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Ticker -->
+    <section class="container p-2 mb-2 fs-2 text-secondary">
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker_item"><span class="text-dark">Taller:</span> Asesoramiento, Reparaciones, Amplaciones
+                    y Diagnóstico. --- <span class="text-dark">Venta: </span>
+                    Portátiles, Accesorios, Impresoras, Consumibles y Ordenadores.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <div class="container px-0 bg-dark text-white">
+        <div class="row gx-0">
+            <div class="col p-4">
+                <footer id="contacto">
+
+                    <address>
+                        <p class="text-center h5">PC Doctor Informática, C. Agustín de Betancourt, 24, 38400 Puerto
+                            de
+                            la Cruz, Santa Cruz de Tenerife.</p>
+                    </address>
+
+                    <!-- Contact Buttons -->
+                    <div class="d-flex justify-content-center gap-3 fs-5 pt-3">
+
+                        <a class="my-btn-whatsapp d-flex text-decoration-none" href="https://wa.me/+34637588192"
+                            target="_blank"> <button type="button"
+                                class="btn bg-transparent text-success border border-success">
+                                <i class="bi bi-whatsapp px-3"></i>
+                            </button></a>
+
+                        <a class="my-btn-tel mytext-center bg-transparent text-white border border-info rounded text-decoration-none p-2"
+                            href="tel:+34922376882" target="_blank"> <button type="button"
+                                class="btn bg-transparent text-info p-1"><i
+                                    class="bi bi-telephone-forward px-3"></i></button></a>
+                    </div>
+                </footer>
+            </div>
+            <div class="container d-flex justify-content-center mb-3">
+                <a class="text-muted" href="https://www.freepik.es/" target="_blank"><small>Carousel pics by
+                        freepik</small></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="extra.js"></script>
+</body>
+
+</html>
